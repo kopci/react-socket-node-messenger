@@ -1,0 +1,5 @@
+.messages {
+  /* messages from top */
+  overflow: auto;
+  flex: auto;
+}

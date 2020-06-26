@@ -1,0 +1,36 @@
+.voice-rec {
+  background: rgb(114, 190, 42);
+  border-radius: 50%;
+  margin: 10px;
+  height: 40px;
+  width: 43px;
+  color: white;
+
+  border: none;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+
+  box-shadow: 0 0 0 0 rgba(211, 71, 71, 1);
+  transform: scale(1);
+}
+.recording {
+  background: rgb(211, 71, 71);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(211, 71, 71, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(211, 71, 71, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(211, 71, 71, 0);
+  }
+}

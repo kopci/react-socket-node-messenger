@@ -1,0 +1,178 @@
+html,
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+#root {
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+.outer-space {
+  background-color: #172435;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+::placeholder {
+  color: #97a6b1;
+}
+.signin-form {
+  font-family: "Montserrat";
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  top: 15%;
+  background: transparent;
+}
+.signin-form header {
+  position: relative;
+  z-index: 4;
+  background: #203044;
+  padding: 20px 40px;
+  border-radius: 15px 15px 0 0;
+}
+.signin-form header h1 {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #ccd9e2;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.signin-form header p {
+  word-spacing: 0px;
+  color: #9facb6;
+  font-size: 17px;
+  margin: 0;
+  margin-top: 5px;
+}
+.signin-form form {
+  position: relative;
+}
+.signin-form .input-section {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  height: 75px;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.signin-form .input-section.folded {
+  width: 95%;
+  margin-top: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+.signin-form .input-section input {
+  background-color: #293c55;
+}
+.signin-form .input-section span {
+  background-color: #222f3f;
+}
+.signin-form .input-section.folded input {
+  background-color: #203044;
+}
+.signin-form .input-section.folded span {
+  background-color: #222f3f;
+}
+.signin-form .input-section.folded + .folded {
+  width: 90%;
+  margin-top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: 0;
+}
+.signin-form .input-section.fold-up {
+  margin-top: -75px;
+}
+.signin-form form input {
+  color: white;
+  width: 80%;
+  border: 0;
+  padding: 20px 40px;
+  margin: 0;
+}
+.signin-form form input:focus {
+  outline: none;
+}
+
+.animated-button {
+  width: 20%;
+  background-color: #d4d4ff;
+}
+.animated-button span {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 75px;
+  text-align: center;
+  height: 75px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.animated-button span i {
+  font-size: 25px;
+  color: #e6a147;
+}
+.animated-button .next-button {
+  background: transparent;
+  color: #e6a147;
+  font-weight: 100;
+  width: 100%;
+  border: 0;
+}
+.next {
+  margin-top: -75px;
+}
+.signin {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  height: 75px;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  background: limegreen;
+  margin-top: -75px;
+}
+.show-signin {
+  margin: 0;
+}
+.signin p {
+  color: white;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
